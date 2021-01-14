@@ -1,2 +1,2 @@
-# euler
+# Euler
 Project Euler solutions
