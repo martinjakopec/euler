@@ -38,5 +38,7 @@ fin = list(s5)
 #print(fin)
 c = sum(fin) + 50
 
+print("test")
+
 print(c)
 
