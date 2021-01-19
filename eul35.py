@@ -15,8 +15,7 @@ def is_circular(x):
     B = deque(y[:])
     L = []
     for e in range(len(B)):
-        a = list(B)
-        f = "".join([str(i) for i in a])
+        f = "".join([str(i) for i in list(B)])
         g = int(f)
         if is_prime(g):
             L.append(g)
