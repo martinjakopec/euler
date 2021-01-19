@@ -1,9 +1,8 @@
-import math
+from math import sqrt
 from collections import deque
 def is_prime(x):
     prim = True
-    a = int(math.sqrt(x)+1) 
-    for i in range(2,a):
+    for i in range(2, int(sqrt(x))+1):
         if x % i == 0:
             prim = False
             break
