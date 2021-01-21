@@ -22,7 +22,7 @@ def is_trunc(x):
     h = len(a)
     while h > 0:
         for i in range(h):
-            c = b[i::]
+            c = b[i:]
             d = b[0:i]
             if d == '':
                 d = 3
