@@ -20,17 +20,15 @@ def is_trunc(x):
         return False
     b = a
     h = len(a)
-    while h > 0:
-        for i in range(h):
-            c = b[i:]
-            d = b[0:i]
-            if d == '':
-                d = 3
-            if not is_prime(int(c)):
-                return False
-            if not is_prime(int(d)):
-                return False
-        h -= 1
+    for i in range(h):
+        c = b[i:]
+        d = b[0:i]
+        if d == '':
+            d = 3
+        if not is_prime(int(c)):
+            return False
+        if not is_prime(int(d)):
+            return False
     return True
 L = [e for e in range(22, 1000000) if is_trunc(e)]
 
